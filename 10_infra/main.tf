@@ -10,7 +10,7 @@ terraform {
     }
   }
   backend "s3" {
-    bucket  = "{YOUR-S3-BUCKET-NAME}"
+    bucket  = ""
     key     = "{YOUR-S3-BUCKET-KEY}"
     region  = "ap-northeast-1"
     profile = "terraform"
