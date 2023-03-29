@@ -54,7 +54,7 @@ jobs:
           terraform plan \
             -var 'project=${{ env.TF_PROJECT }}' \
             -var 'environment=${{ env.TF_ENVIRONMENT }}' \
-            -var 'userename=${{ secrets.MYSQL_USERNAME }}' \
+            -var 'username=${{ secrets.MYSQL_USERNAME }}' \
             -var 'password=${{ secrets.MYSQL_PASSWORD }}' \
             -input=false \
             -no-color \
