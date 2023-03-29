@@ -52,8 +52,8 @@ jobs:
       - name: Terraform plan
         run: |
           terraform plan \
-            -var 'project=${{ env.PROJECT }}' \
-            -var 'environment=${{ env.ENVIRONMENT }}' \
+            -var 'project=${{ env.TF_PROJECT }}' \
+            -var 'environment=${{ env.TF_ENVIRONMENT }}' \
             -var 'userename=${{ secrets.MYSQL_USERNAME }}' \
             -var 'password=${{ secrets.MYSQL_PASSWORD }}' \
             -input=false \
